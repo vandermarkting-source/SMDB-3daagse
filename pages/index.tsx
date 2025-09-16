@@ -141,7 +141,17 @@ export default function HomePage() {
         <section id="challenge" className="py-16 bg-primary/5 border-t border-border/50 px-[4px] py-[64px] mx-[40px] my-[0px] rounded-[35px] bg-[rgba(231,122,51,0.15)]">
           <div className="container max-w-6xl mx-auto px-6">
             <ChallengeSection />
-
+            
+            {/* Survey Form Embed */}
+            <div className="mt-8">
+              <iframe 
+                src="https://api.leadconnectorhq.com/widget/survey/HzNZKVjDL4WtMVhbmuN0" 
+                style={{border: 'none', width: '100%'}} 
+                scrolling="no" 
+                id="HzNZKVjDL4WtMVhbmuN0" 
+                title="survey"
+              />
+            </div>
           </div>
         </section>
         

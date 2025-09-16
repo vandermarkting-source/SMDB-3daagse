@@ -10,6 +10,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" 
           rel="stylesheet" 
         />
+        <script src="https://link.msgsndr.com/js/form_embed.js" async></script>
       </Head>
       <body>
         <Main />
