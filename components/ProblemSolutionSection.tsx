@@ -16,21 +16,21 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
       title: "Je hoofd vol",
       titleClassName: "font-amatic text-3xl",
       description: "Eindeloze to-do lijsten, alles dat moet blijft malen, geen ruimte voor iets nieuws.",
-      symptoms: ["Slecht slapen", "irritaties", "dodelijke ernst"]
+      symptoms: ["Slecht slapen", "Irritaties", "Dodelijke ernst"]
     },
     {
       icon: Clock,
       title: "Je dagen vol",
       titleClassName: "font-amatic text-3xl",
       description: "Van afspraak naar deadline. Dag in dag uit. Geen tijd voor spontaniteit of speelse momenten.",
-      symptoms: ["stress", "haast", "druk", "broodje achter je scherm"]
+      symptoms: ["Stress", "Haast", "Druk", "Broodje achter je scherm"]
     },
     {
       icon: Frown,
       title: "Het plezier is weg",
       titleClassName: "font-amatic text-3xl",
       description: "Dingen die moeten gaan voor. Werk is serieus. Thuis is serieus. Alles is serieus. Alles is ernstig.",
-      symptoms: ["futloos", "vermoeidheid", "spanning", "verveling"]
+      symptoms: ["Futloos", "Vermoeidheid", "Spanning", "Verveling"]
     }
   ];
 
@@ -72,11 +72,10 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
             viewport={{ once: true }}
             className="lg:sticky lg:top-32"
           >
+            <h2 className="mb-8 text-primary font-amatic text-4xl font-bold">
+              Welke herken je het meest?
+            </h2>
             <div className="p-8 rounded-2xl border" style={{ backgroundColor: 'rgba(231, 122, 51, 0.03)', borderColor: 'rgba(231, 122, 51, 0.15)' }}>
-              
-              <p className="text-foreground">
-                Het goede nieuws? Het hoeft niet zo te blijven.
-              </p>
               
               {/* Interactive element */}
               <div className="mt-6 p-4 rounded-xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
@@ -209,7 +208,7 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
                 onClick={onGetStarted}
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md group"
               >
-                <span className="font-poppins">Probeer het uit - <span className="font-playful font-bold italic">gratis challenge</span></span>
+                <span className="font-amatic text-xl">gratis challenge</span>
                 <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
