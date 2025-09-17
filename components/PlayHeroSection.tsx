@@ -56,16 +56,16 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
             <div className="text-center space-y-8">
               <div>
                 <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
-                  Wil jij meer <span className="text-primary font-amatic text-5xl font-bold">vrijheid</span> en
-                  <span className="text-accent font-amatic text-5xl font-bold">vrolijkheid</span>
+                  Wil jij meer <span className="text-primary font-amatic text-5xl font-bold">VRIJHEID</span> en
+                  <span className="text-accent font-amatic text-5xl font-bold">LICHTHEID</span>
                   in je leven, werk of team?
                 </h1>
               </div>
               
               <div>
                 <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-poppins">
-                  Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">spelen met de bedoeling</span> – en probeer het zelf in een<br />
-                  gratis 3-daagse challenge.
+                  Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">Spelen met de Bedoeling</span><br /><br />
+                  Probeer de gratis 3-daagse challenge
                 </p>
               </div>
               

@@ -94,15 +94,16 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
           
           <div className="space-y-4 text-lg text-foreground font-poppins leading-relaxed">
             <p>
-              <span className="font-amatic text-2xl font-bold text-primary">Spelen met de bedoeling</span> is een speelse manier om naar jezelf en de wereld te kijken.
+              <span className="font-amatic text-2xl font-bold text-primary">Spelen met de bedoeling</span> is een speelse manier om naar jezelf en wereld te kijken.
             </p>
             <p>
-              Niet zweverig. Niet kinderachtig.<br />
-              Wel nieuwsgierig. Luchtig. Verrassend.
+              Niet zweverig of kinderachtig. Wel nieuwsgierig, licht en opgewekt.
             </p>
             <p>
-              Je leert hoe je kleine momenten van spel kunt toelaten in je dag.<br />
-              Thuis, op je werk, in gesprekken of gewoon in je eigen hoofd.
+              Je leven, je werk, je team, je organisatie worden plezieriger, opgwekt en vrijer.
+            </p>
+            <p>
+              Als je leert spelen met de bedoeling, leer je hoe je kleine momenten van spel kunt toelaten in je dag. Thuis, op je werk, in gesprekken of gewoon in je eigen hoofd.
             </p>
           </div>
         </motion.div>

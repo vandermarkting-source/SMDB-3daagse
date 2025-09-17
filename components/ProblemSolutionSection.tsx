@@ -13,47 +13,47 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
   const problemSteps = [
     {
       icon: Brain,
-      title: "Je hoofd zit vol",
+      title: "Je hoofd vol",
       titleClassName: "font-amatic text-3xl",
-      description: "Eindeloze to-do lijsten, zorgen die blijven malen, geen ruimte voor iets nieuws",
-      symptoms: ["Slecht slapen", "Vergeetachtig", "Geïrriteerd", "Overweldigd"]
+      description: "Eindeloze to-do lijsten, alles dat moet blijft malen, geen ruimte voor iets nieuws.",
+      symptoms: ["Slecht slapen", "irritaties", "dodelijke ernst"]
     },
     {
       icon: Clock,
-      title: "Je dagen zijn strak",
+      title: "Je dagen vol",
       titleClassName: "font-amatic text-3xl",
-      description: "Van meeting naar deadline, geen tijd voor spontaniteit of onverwachte momenten",
-      symptoms: ["Stress", "Haast", "Geen pauzes", "Vermoeid"]
+      description: "Van afspraak naar deadline. Dag in dag uit. Geen tijd voor spontaniteit of speelse momenten.",
+      symptoms: ["stress", "haast", "druk", "broodje achter je scherm"]
     },
     {
       icon: Frown,
       title: "Het plezier is weg",
       titleClassName: "font-amatic text-3xl",
-      description: "Werk voelt zwaar, privé ook. Alles is serieus geworden, lachen gebeurt zelden",
-      symptoms: ["Somber", "Verveling", "Geen energie", "Eenzaam"]
+      description: "Dingen die moeten gaan voor. Werk is serieus. Thuis is serieus. Alles is serieus. Alles is ernstig.",
+      symptoms: ["futloos", "vermoeidheid", "spanning", "verveling"]
     }
   ];
 
   const solutionSteps = [
     {
       icon: Lightbulb,
-      question: "Wat als het lichter mag?",
+      question: "Wat als het lichter kan?",
       questionClassName: "font-amatic text-3xl",
-      answer: "Je hoeft niet alles perfect te doen. Goed genoeg is vaak goed genoeg.",
+      answer: "Niet alles hoeft perfect. Goed genoeg is goed genoeg.",
       visual: Lightbulb
     },
     {
       icon: Target,
-      question: "Wat als je niet álles hoeft op te lossen?",
+      question: "Wat als je mag spelen met de bedoeling?",
       questionClassName: "font-amatic text-3xl",
-      answer: "Sommige problemen lossen zichzelf op. Anderen verdienen niet al je energie.",
+      answer: "Dat iets moois ontstaat, zonder druk, zonder plan!",
       visual: Target
     },
     {
       icon: Zap,
-      question: "Wat als je mag spelen met wat er nu is?",
+      question: "Wat als je energie krijgt van energie geven?",
       questionClassName: "font-amatic text-3xl",
-      answer: "Zonder oordeel. Gewoon, uit nieuwsgierigheid.",
+      answer: "Zonder oordeel. Gewoon gáán, uit nieuwsgierigheid!",
       visual: Zap
     }
   ];
@@ -72,9 +72,6 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
             viewport={{ once: true }}
             className="lg:sticky lg:top-32"
           >
-            <h2 className="mb-8 text-primary font-poppins text-2xl">
-              Misschien <span className="font-amatic text-4xl font-bold">herken</span> je het wel:
-            </h2>
             <div className="p-8 rounded-2xl border" style={{ backgroundColor: 'rgba(231, 122, 51, 0.03)', borderColor: 'rgba(231, 122, 51, 0.15)' }}>
               
               <p className="text-foreground">

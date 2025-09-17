@@ -14,19 +14,19 @@ export function NostalgicSection({ onContinue, onGetStarted }: NostalgicSectionP
     {
       icon: Home,
       title: "Je eigen wereld maken",
-      description: "Kastelen bouwen van kussens, fantasieën die werkelijker waren dan de werkelijkheid",
+      description: "Kastelen bouwen van kussens. Fantasiën die echter zijn dan de werkelijkheid",
       color: "from-purple-400 to-pink-400"
     },
     {
       icon: Sparkles,
-      title: "Zonder doel beginnen",
-      description: "En ineens ontstond er iets moois. Zonder plan, zonder druk, gewoon uit nieuwsgierigheid",
+      title: "Zonder doel",
+      description: "Ineens ontstaat er iets moois. Zonder plan, zonder druk, alleen nieuwsgierigheid",
       color: "from-blue-400 to-green-400"
     },
     {
       icon: Heart,
-      title: "Alles voelde licht",
-      description: "Vrij. Vrolijk. Alsof alles mogelijk was en niets te zwaar om te dragen",
+      title: "Lichtheid",
+      description: "Vrij en opgewekt. Alles is mogelijk. Niets te zwaar.",
       color: "from-yellow-400 to-orange-400"
     }
   ];
@@ -49,19 +49,18 @@ export function NostalgicSection({ onContinue, onGetStarted }: NostalgicSectionP
           className="text-center mb-16 max-w-3xl mx-auto"
         >
           <h2 className="text-3xl mb-8 font-poppins text-foreground">
-            Weet je nog hoe het was om gewoon te <span className="font-amatic text-5xl font-bold text-primary">spelen</span>?
+            Weet je nog hoe het is om gewoon te <span className="font-amatic text-5xl font-bold text-primary">spelen</span>?
           </h2>
           
           <div className="space-y-4 text-lg text-foreground font-poppins leading-relaxed">
             <p>
-              Dat warme gevoel wanneer je helemaal opging in het moment. 
-              Wanneer tijd niet bestond en alles mogelijk was.
+              Dat gevoel wanneer je helemaal opgaat in het moment? Dat tijd niet bestaat en alles mogelijk is.
             </p>
             <p>
-                Dat gevoel van <span className="font-amatic text-3xl font-bold text-primary">spelen</span> is er nog steeds.
+                Dat gevoel van <span className="font-amatic text-3xl font-bold text-primary">spelen</span>. Het kan nog steeds
               </p>
             <p>
-              Maar het raakt vaak ondergesneeuwd door moeten, door druk, door serieuze dingen.
+              Nu raakt het vaak ondergesneeuwd door moeten, door druk, door dodelijke ernst.
             </p>
           </div>
         </motion.div>
@@ -76,7 +75,7 @@ export function NostalgicSection({ onContinue, onGetStarted }: NostalgicSectionP
           >
             <div className="space-y-4">
               <h3 className="text-primary mb-6 font-amatic text-3xl font-bold">
-                Herinner je je nog...
+                Weet je nog?
               </h3>
               <div className="space-y-3">
                 {memories.map((memory, index) => (
