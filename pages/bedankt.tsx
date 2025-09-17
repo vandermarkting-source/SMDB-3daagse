@@ -215,7 +215,7 @@ export default function BedanktPage() {
           <section className="py-16 bg-[rgba(231,122,51,0.15)] border-t border-border/50 px-1 mx-10 my-0 rounded-[35px] slide-in">
             <div className="container max-w-6xl mx-auto px-6">
               <div className="max-w-4xl mx-auto text-center">
-                <div className="success-icon text-6xl mb-6">🎉</div>
+                <div className="success-icon text-6xl mb-6"></div>
                 <h1 className="font-amatic text-6xl md:text-8xl font-bold mb-6 title-glow text-foreground">
                   Bedankt!
                 </h1>
@@ -226,17 +226,17 @@ export default function BedanktPage() {
                 {/* WhatsApp Info */}
                 <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white p-8 rounded-2xl mb-8 pulse-effect shadow-lg">
                   <h3 className="font-amatic text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3">
-                    📱 Je ontvangt binnen enkele minuten de eerste challenge in WhatsApp
+                    Je ontvangt binnen enkele minuten de eerste challenge in WhatsApp
                   </h3>
                   <p className="text-lg md:text-xl opacity-95">
-                    Veel succes met de uitdagingen die komen gaan! 🚀
+                    Veel succes met de uitdagingen die komen gaan!
                   </p>
                 </div>
 
                 {/* Share Section */}
                 <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-border/30">
                   <h3 className="font-amatic text-3xl md:text-4xl font-bold text-foreground mb-6">
-                    Deel met vrienden! 🤝
+                    Deel met vrienden!
                   </h3>
                   <p className="text-muted-foreground mb-6 text-lg">
                     Vertel anderen over deze geweldige challenge!
@@ -245,7 +245,7 @@ export default function BedanktPage() {
                     onClick={shareOnWhatsApp}
                     className="share-button bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg inline-flex items-center gap-3"
                   >
-                    📲 Deel via WhatsApp
+                    Deel via WhatsApp
                   </button>
                 </div>
               </div>
