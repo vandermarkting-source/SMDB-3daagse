@@ -77,16 +77,8 @@ export default function ThankYouPage() {
     const url = "https://spelenmetdebedoeling.nl";
     const fullMessage = encodeURIComponent(`${message}\n\n${url}`);
     
-    // Check if on mobile device
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    if (isMobile) {
-      // Open WhatsApp app on mobile
-      window.open(`whatsapp://send?text=${fullMessage}`, '_blank');
-    } else {
-      // Open WhatsApp Web on desktop
-      window.open(`https://web.whatsapp.com/send?text=${fullMessage}`, '_blank');
-    }
+    // Always try to open WhatsApp app first
+    window.open(`whatsapp://send?text=${fullMessage}`, '_blank');
   };
 
   return (
