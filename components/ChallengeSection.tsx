@@ -35,18 +35,7 @@ export function ChallengeSection() {
           </p>
         </motion.div>
 
-        {/* GHL Form Embed Plek */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-8 p-6 border border-dashed border-primary/30 rounded-lg bg-background/50"
-        >
-          <div id="ghl-form-embed" className="min-h-[300px] flex items-center justify-center">
-            <p className="text-muted-foreground italic">Plaats hier je GHL form embed code</p>
-          </div>
-        </motion.div>
+
       </div>
     </div>
   );

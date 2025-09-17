@@ -142,15 +142,27 @@ export default function HomePage() {
           <div className="container max-w-6xl mx-auto px-6">
             <ChallengeSection />
             
-            {/* Survey Form Embed */}
+            {/* GHL Form Embed */}
             <div className="mt-8">
               <iframe 
-                src="https://api.leadconnectorhq.com/widget/survey/HzNZKVjDL4WtMVhbmuN0" 
-                style={{border: 'none', width: '100%'}} 
-                scrolling="no" 
-                id="HzNZKVjDL4WtMVhbmuN0" 
-                title="survey"
+                src="https://api.leadconnectorhq.com/widget/form/KduoNtYSzHvxndgd2x9j" 
+                style={{width: '100%', height: '100%', border: 'none', borderRadius: '3px', overflow: 'auto'}} 
+                scrolling="yes"
+                id="inline-KduoNtYSzHvxndgd2x9j" 
+                data-layout="{'id':'INLINE'}" 
+                data-trigger-type="alwaysShow" 
+                data-trigger-value="" 
+                data-activation-type="alwaysActivated" 
+                data-activation-value="" 
+                data-deactivation-type="neverDeactivate" 
+                data-deactivation-value="" 
+                data-form-name="Form 0" 
+                data-height="432" 
+                data-layout-iframe-id="inline-KduoNtYSzHvxndgd2x9j" 
+                data-form-id="KduoNtYSzHvxndgd2x9j" 
+                title="Form 0"
               />
+              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
           </div>
         </section>

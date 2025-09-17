@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/bedankt",
+      "destination": "/bedankt"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/thank-you",
+      "destination": "/bedankt",
+      "permanent": true
+    }
+  ]
+}
