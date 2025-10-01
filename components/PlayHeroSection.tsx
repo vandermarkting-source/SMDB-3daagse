@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import Image from "next/image";
 import { useState } from "react";
 import { BellIcon } from "./BellIcon";
 
@@ -55,7 +56,13 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center space-y-6">
               <div className="flex justify-center">
-                <ImageWithFallback src="/images/Muts_SmdB_transparante_achtergrond-1-removebg-preview.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
+                <Image 
+                  src="/images/Muts_SmdB_transparante_achtergrond-1-removebg-preview.png"
+                  alt="Spelen met de Bedoeling"
+                  width={160}
+                  height={160}
+                  className="h-12 sm:h-14 w-auto mx-auto"
+                />
               </div>
               <div>
                 <h1 className="mb-4 leading-snug font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
@@ -78,17 +85,17 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
                   Meld je aan voor de gratis challenge!
                 </Button>
                 {/* Rinkelende belletjes onder de CTA */}
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-                  <BellIcon size="sm" />
+                <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
                   <BellIcon size="md" />
-                  <BellIcon size="sm" />
                   <BellIcon size="md" />
-                  <BellIcon size="sm" />
                   <BellIcon size="md" />
-                  <BellIcon size="sm" />
                   <BellIcon size="md" />
-                  <BellIcon size="lg" />
-                  <BellIcon size="sm" />
+                  <BellIcon size="md" />
+                  <BellIcon size="md" />
+                  <BellIcon size="md" />
+                  <BellIcon size="md" />
+                  <BellIcon size="md" />
+                  <BellIcon size="md" />
                 </div>
               </div>
             </div>

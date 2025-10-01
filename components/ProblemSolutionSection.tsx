@@ -189,13 +189,10 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
             >
               <button 
                 onClick={onGetStarted}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md font-amatic"
               >
                 Meld je aan voor de gratis challenge
               </button>
-              <p className="mt-3 text-sm text-muted-foreground font-poppins">
-                Binnen enkele weken gebeurt het: dan start jouw gratis challenge
-              </p>
             </motion.div>
           </motion.div>
 
