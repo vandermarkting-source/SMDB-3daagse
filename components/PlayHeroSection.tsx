@@ -16,7 +16,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 7rem 0 5rem 0; /* extra top-padding zodat de muts niet onder de header valt */
+            padding: 9rem 0 5rem 0; /* meer bovenruimte voor zichtbare muts onder vaste header */
             position: relative;
             overflow: hidden;
           }
@@ -77,7 +77,12 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
                 >
                   Meld je aan voor de gratis challenge!
                 </Button>
-                
+                {/* Rinkelende belletjes onder de CTA */}
+                <div className="mt-4 flex items-center justify-center gap-4">
+                  <BellIcon size="sm" />
+                  <BellIcon size="md" />
+                  <BellIcon size="sm" />
+                </div>
               </div>
             </div>
           </div>

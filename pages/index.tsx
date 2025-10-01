@@ -74,27 +74,14 @@ export default function HomePage() {
                   alt="Spelen met de Bedoeling"
                   className="h-8 w-auto sm:h-10"
                 />
-                <span className="text-sm sm:text-lg text-foreground hidden md:block">Spelen met de Bedoeling</span>
               </div>
               
               <nav className="flex items-center gap-2">
-                <button
-                  onClick={() => scrollToSection('hero')}
-                  className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200 font-amatic"
-                >
-                Ontdekken!
-                </button>
                 <button
                   onClick={() => scrollToSection('challenge')}
                   className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic"
                 >
                 Meld je aan!
-                </button>
-                <button
-                  onClick={() => scrollToSection('faq')}
-                  className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200 font-amatic"
-                >
-                Vragen!
                 </button>
               </nav>
             </div>
