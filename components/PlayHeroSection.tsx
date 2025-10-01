@@ -72,8 +72,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
               
               <div>
                 <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-snug font-poppins">
-                  Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">Spelen met de Bedoeling</span><br />
-                  <span className="inline-block mt-2">Meld je aan voor de gratis 3-daagse challenge</span>
+                  Ontdek de kracht van <span className="font-amatic text-2xl sm:text-3xl font-bold text-primary whitespace-nowrap">Spelen met de Bedoeling</span>
                 </p>
               </div>
               

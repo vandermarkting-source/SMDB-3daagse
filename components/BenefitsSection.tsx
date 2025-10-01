@@ -93,15 +93,15 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
             <Image 
               src="/images/Logo%20alleen%20tekst.png" 
               alt="Spelen met de Bedoeling"
-              width={360}
-              height={100}
-              className="h-14 sm:h-16 w-auto mx-auto"
+              width={480}
+              height={140}
+              className="h-16 sm:h-20 w-auto mx-auto"
             />
           </h2>
           
           <div className="space-y-4 text-lg text-foreground font-poppins leading-relaxed">
             <p>
-              <span className="font-amatic text-2xl font-bold text-primary">Spelen met de bedoeling</span> is een speelse manier om naar jezelf en wereld te kijken.
+              Spelen met de bedoeling is een speelse manier om naar jezelf en wereld te kijken.
             </p>
             <p>
               Niet zweverig of kinderachtig. Wel nieuwsgierig, licht en opgewekt.

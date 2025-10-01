@@ -194,15 +194,9 @@ export default function ThankYouPage() {
               <nav className="flex items-center gap-2">
                 <a 
                   href="/"
-                  className="text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200 font-amatic"
+                  className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic font-bold"
                 >
-                  Terug naar site!
-                </a>
-                <a 
-                  href="/#challenge"
-                  className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic"
-                >
-                  Nog een keer!
+                  Naar site!
                 </a>
               </nav>
             </div>
@@ -218,19 +212,19 @@ export default function ThankYouPage() {
               <div className="max-w-4xl mx-auto text-center">
                 <div className="success-icon text-6xl mb-6">🎉</div>
                 <h1 className="font-amatic text-6xl md:text-8xl font-bold mb-6 title-glow text-foreground">
-                  Bedankt!
+                  Te gek!
                 </h1>
                 <p className="text-xl md:text-2xl mb-12 text-muted-foreground">
                   Super dat je je hebt aangemeld voor de 3-daagse challenge!
                 </p>
 
-                {/* WhatsApp Info */}
-                <div className="bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white p-8 rounded-2xl mb-8 pulse-effect shadow-lg">
+                {/* Challenge Info in zachte merk-kleuren */}
+                <div className="bg-[linear-gradient(to_right, rgba(231,122,51,0.4), rgba(246,189,51,0.4))] text-foreground p-8 rounded-2xl mb-8 pulse-effect shadow-lg">
                   <h3 className="font-amatic text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3">
-                    📱 Je ontvangt binnen enkele minuten de eerste challenge in WhatsApp
+                    📱 De challenge start snel!
                   </h3>
                   <p className="text-lg md:text-xl opacity-95">
-                    Veel succes met de uitdagingen die komen gaan! 🚀
+                    Je ontvangt binnenkort een bericht in WhatsApp. Veel succes met de uitdagingen die komen gaan. 🚀
                   </p>
                 </div>
 
