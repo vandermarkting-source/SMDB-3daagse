@@ -16,7 +16,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 9rem 0 5rem 0; /* meer bovenruimte voor zichtbare muts onder vaste header */
+            padding: 12rem 0 5rem 0; /* nog meer bovenruimte zodat het hoedje volledig zichtbaar is */
             position: relative;
             overflow: hidden;
           }
@@ -53,20 +53,20 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
         <div className="hero-gradient-3"></div>
         <div className="relative z-10">
           <div className="max-w-5xl mx-auto px-6">
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-6">
               <div className="flex justify-center">
                 <ImageWithFallback src="/images/Muts_SmdB_transparante_achtergrond-1-removebg-preview.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
               </div>
               <div>
-                <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
+                <h1 className="mb-4 leading-snug font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
                   Wil jij meer vrijheid en lichtheid in je leven, werk of team?
                 </h1>
               </div>
               
               <div>
-                <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-poppins">
-                  Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">Spelen met de Bedoeling</span><br /><br />
-                  Meld je aan voor de gratis 3-daagse challenge
+                <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-snug font-poppins">
+                  Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">Spelen met de Bedoeling</span><br />
+                  <span className="inline-block mt-2">Meld je aan voor de gratis 3-daagse challenge</span>
                 </p>
               </div>
               
