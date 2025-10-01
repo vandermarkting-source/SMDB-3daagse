@@ -189,7 +189,7 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
             >
               <button 
                 onClick={onGetStarted}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md font-amatic"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md font-amatic font-bold"
               >
                 Meld je aan voor de gratis challenge
               </button>

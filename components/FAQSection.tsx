@@ -122,7 +122,7 @@ export function FAQSection({ onGetStarted }: FAQSectionProps) {
           <Button 
             size="lg"
             onClick={onGetStarted}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] px-8 py-3 font-poppins"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] px-8 py-3 font-amatic font-bold"
           >
             Start jouw challenge 🚀
           </Button>

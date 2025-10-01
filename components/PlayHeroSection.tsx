@@ -80,12 +80,12 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
               <div className="pt-4">
                 <Button 
                   onClick={onGetStarted}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-amatic"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-amatic font-bold"
                 >
                   Meld je aan voor de gratis challenge!
                 </Button>
                 {/* Rinkelende belletjes onder de CTA */}
-                <div className="mt-1 flex flex-wrap items-center justify-center gap-1">
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-1">
                   <BellIcon size="sm" />
                   <BellIcon size="sm" />
                   <BellIcon size="sm" />

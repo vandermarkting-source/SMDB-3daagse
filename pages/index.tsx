@@ -79,7 +79,7 @@ export default function HomePage() {
               <nav className="flex items-center gap-2">
                 <button
                   onClick={() => scrollToSection('challenge')}
-                  className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic"
+                  className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic font-bold"
                 >
                 Meld je aan!
                 </button>

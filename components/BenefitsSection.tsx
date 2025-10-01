@@ -89,15 +89,14 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
           viewport={{ once: true }}
           className="text-center mb-16 max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl mb-8 font-poppins text-foreground flex items-center justify-center gap-3">
+          <h2 className="mb-8">
             <Image 
               src="/images/Logo%20alleen%20tekst.png" 
               alt="Spelen met de Bedoeling"
-              width={260}
-              height={70}
-              className="h-10 sm:h-12 w-auto"
+              width={360}
+              height={100}
+              className="h-14 sm:h-16 w-auto mx-auto"
             />
-            <span>– wat is dat eigenlijk?</span>
           </h2>
           
           <div className="space-y-4 text-lg text-foreground font-poppins leading-relaxed">
