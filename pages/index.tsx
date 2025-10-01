@@ -64,7 +64,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-transparent">
+      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-border/30">
         <div className="container max-w-6xl mx-auto px-6 py-3 sm:py-4 bg-[rgba(255,255,255,0)]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
@@ -79,19 +79,19 @@ export default function HomePage() {
             <nav className="flex items-center gap-2">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
+                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200 font-amatic"
               >
                 Ontdekken
               </button>
               <button
                 onClick={() => scrollToSection('challenge')}
-                className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm"
+                className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm font-amatic"
               >
                 Meld je aan
               </button>
               <button
                 onClick={() => scrollToSection('faq')}
-                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
+                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200 font-amatic"
               >
                 Vragen
               </button>

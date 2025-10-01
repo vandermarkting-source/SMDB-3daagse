@@ -55,12 +55,12 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center space-y-8">
               <div className="flex justify-center">
-                <ImageWithFallback src="/images/logo%20naast%20elkaar.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
+                <ImageWithFallback src="/images/Muts_SmdB_transparante_achtergrond-1-removebg-preview.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
               </div>
               <div>
                 <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
-                  Wil jij meer <span className="text-primary font-amatic text-5xl font-bold">VRIJHEID</span> en
-                  <span className="text-accent font-amatic text-5xl font-bold">LICHTHEID</span>
+                  Wil jij meer <span className="text-primary font-semibold">Vrijheid</span> en
+                  <span className="text-accent font-semibold">Lichtheid</span>
                   in je leven, werk of team?
                 </h1>
               </div>
@@ -75,13 +75,11 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
               <div className="pt-4">
                 <Button 
                   onClick={onGetStarted}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-amatic"
                 >
                   Meld je aan voor de gratis challenge
                 </Button>
-                <p className="mt-3 text-sm text-gray-200 font-poppins">
-                  Binnen enkele weken gebeurt het: dan start jouw gratis challenge
-                </p>
+                
               </div>
             </div>
           </div>
