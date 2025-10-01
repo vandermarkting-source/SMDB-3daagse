@@ -64,9 +64,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       {/* Header */}
-      <header className="sticky top-4 z-50 bg-transparent">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <div className="rounded-2xl shadow-xl border border-border/30 bg-background/90 backdrop-blur px-6 py-3 sm:py-4">
+          <div className="rounded-b-2xl shadow-xl border border-border/30 bg-background/90 backdrop-blur px-6 py-3 sm:py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
                 <ImageWithFallback
@@ -105,7 +105,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main>
         {/* Hero Section - Full Width with Shadow */}
-        <section id="hero" className="w-full relative z-10 -mt-4" style={{ backgroundColor: '#12305B' }}>
+        <section id="hero" className="w-full relative z-10 -mt-20" style={{ backgroundColor: '#12305B' }}>
           <div className="absolute inset-x-0 -bottom-6 h-6 bg-gradient-to-b from-black/30 via-black/15 to-transparent pointer-events-none z-20"></div>
           <div className="absolute inset-x-0 -bottom-12 h-12 bg-gradient-to-b from-black/10 to-transparent pointer-events-none z-10"></div>
           <PlayHeroSection onGetStarted={() => scrollToSection('challenge')} />

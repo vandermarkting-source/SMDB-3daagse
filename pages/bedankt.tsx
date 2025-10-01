@@ -179,9 +179,9 @@ export default function BedanktPage() {
 
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
         {/* Header */}
-        <header className="sticky top-4 z-50 bg-transparent">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
-            <div className="rounded-2xl shadow-xl border border-border/30 bg-background/90 backdrop-blur px-6 py-4 flex items-center justify-between">
+            <div className="rounded-b-2xl shadow-xl border border-border/30 bg-background/90 backdrop-blur px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
               <ImageWithFallback 
                 src="/images/logo%20naast%20elkaar.png" 
