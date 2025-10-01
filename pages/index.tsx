@@ -105,7 +105,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main>
         {/* Hero Section - Full Width with Shadow */}
-        <section id="hero" className="w-full relative z-10 -mt-20" style={{ backgroundColor: '#12305B' }}>
+        <section id="hero" className="w-full relative z-10 -mt-24" style={{ backgroundColor: '#12305B' }}>
           <div className="absolute inset-x-0 -bottom-6 h-6 bg-gradient-to-b from-black/30 via-black/15 to-transparent pointer-events-none z-20"></div>
           <div className="absolute inset-x-0 -bottom-12 h-12 bg-gradient-to-b from-black/10 to-transparent pointer-events-none z-10"></div>
           <PlayHeroSection onGetStarted={() => scrollToSection('challenge')} />

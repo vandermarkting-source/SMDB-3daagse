@@ -16,7 +16,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 5rem 0;
+            padding: 7rem 0 5rem 0; /* extra top-padding zodat de muts niet onder de header valt */
             position: relative;
             overflow: hidden;
           }
