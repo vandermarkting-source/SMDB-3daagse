@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PlayHeroSection } from "../components/PlayHeroSection";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { NostalgicSection } from "../components/NostalgicSection";
 import { ProblemSolutionSection } from "../components/ProblemSolutionSection";
 import { BenefitsSection } from "../components/BenefitsSection";
@@ -64,37 +65,40 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-border/30">
-        <div className="container max-w-6xl mx-auto px-6 py-4 bg-[rgba(255,255,255,0)]">
+        <div className="container max-w-6xl mx-auto px-6 py-3 sm:py-4 bg-[rgba(255,255,255,0)]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
-              <img 
-                src="https://storage.googleapis.com/msgsndr/vbnNdAs4NZKZXfoz2etA/media/68c6aa6f0e58bee55f8a13cd.png" 
-                alt="Spelen met de Bedoeling" 
-                className="h-6 w-auto xs:h-8 sm:h-10" 
-              />
-              <span className="text-sm xs:text-lg sm:text-xl text-foreground hidden xs:block">Spelen met de Bedoeling</span>
+              <picture>
+                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
+                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
+                <ImageWithFallback
+                  src="/images/logo.png"
+                  alt="Spelen met de Bedoeling"
+                  className="h-8 w-auto sm:h-10"
+                />
+              </picture>
+              <span className="text-sm sm:text-lg text-foreground hidden md:block">Spelen met de Bedoeling</span>
             </div>
             
             <nav className="flex items-center gap-2">
-              <button 
+              <button
                 onClick={() => scrollToSection('hero')}
-                className="text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
+                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
               >
                 Ontdekken
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('challenge')}
-                className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm"
+                className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm"
               >
-                Meedoen
+                Meld je aan
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('faq')}
-                className="text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
+                className="hidden md:inline-flex text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
               >
                 Vragen
               </button>
-              {/* Inlogknop verwijderd */}
             </nav>
           </div>
         </div>
@@ -180,11 +184,15 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto px-6 py-12">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2 sm:gap-3">
-              <img 
-                src="https://storage.googleapis.com/msgsndr/vbnNdAs4NZKZXfoz2etA/media/68c6aa6f0e58bee55f8a13cd.png" 
-                alt="Spelen met de Bedoeling" 
-                className="h-6 w-auto sm:h-8" 
-              />
+              <picture>
+                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
+                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
+                <ImageWithFallback
+                  src="/images/logo.png"
+                  alt="Spelen met de Bedoeling"
+                  className="h-6 w-auto sm:h-8"
+                />
+              </picture>
               <span className="text-sm sm:text-base text-foreground">Spelen met de Bedoeling</span>
             </div>
             <p className="text-sm text-muted-foreground">

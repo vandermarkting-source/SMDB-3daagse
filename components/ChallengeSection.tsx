@@ -31,7 +31,7 @@ export function ChallengeSection() {
             Durf jij te spelen?
           </h3>
           <p className="text-muted-foreground">
-            Meld je hier gratis aan voor de challenge
+            Meld je aan voor de gratis challenge
           </p>
         </motion.div>
 

@@ -182,7 +182,7 @@ export function ChallengeForm({ onComplete }: ChallengeFormProps) {
                   Aanmelden...
                 </div>
               ) : (
-                "Start challenge"
+                "Meld je aan voor de gratis challenge"
               )}
             </Button>
           )}

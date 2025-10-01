@@ -132,23 +132,7 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
                     <h4 className="text-primary mb-2 font-amatic text-2xl font-bold">{step.title}</h4>
                     <p className="text-muted-foreground mb-4">{step.description}</p>
                     
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ 
-                        height: activeStep === index ? "auto" : 0,
-                        opacity: activeStep === index ? 1 : 0
-                      }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="flex flex-wrap gap-2">
-                        {step.symptoms.map((symptom, i) => (
-                          <span key={i} className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">
-                            {symptom}
-                          </span>
-                        ))}
-                      </div>
-                    </motion.div>
+                    {/* Chips met ‘woordjes’ verwijderd voor rustiger uitstraling */}
                   </div>
                 </div>
               </motion.div>
@@ -205,13 +189,13 @@ export function ProblemSolutionSection({ onGetStarted }: ProblemSolutionSectionP
             >
               <button 
                 onClick={onGetStarted}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md group"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <span className="font-poppins">Probeer het uit - </span><span className="font-amatic text-xl">gratis challenge</span>
-                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                Meld je aan voor de gratis challenge
               </button>
+              <p className="mt-3 text-sm text-muted-foreground font-poppins">
+                Binnen enkele weken gebeurt het: dan start jouw gratis challenge
+              </p>
             </motion.div>
           </motion.div>
 

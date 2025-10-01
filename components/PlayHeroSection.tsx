@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useState } from "react";
 import { BellIcon } from "./BellIcon";
 
@@ -15,15 +16,14 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 6rem 0;
+            padding: 5rem 0;
             position: relative;
             overflow: hidden;
           }
           .hero-gradient-1 {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(231, 122, 51, 0.2) 0%, transparent 50%, rgba(246, 189, 51, 0.1) 100%);
-            animation: pulse 4s ease-in-out infinite;
+            background: linear-gradient(135deg, rgba(231, 122, 51, 0.12) 0%, transparent 50%, rgba(246, 189, 51, 0.06) 100%);
           }
           .hero-gradient-2 {
             position: absolute;
@@ -31,7 +31,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
             left: -25%;
             width: 75%;
             height: 100%;
-            background: rgba(231, 122, 51, 0.05);
+            background: rgba(231, 122, 51, 0.03);
             border-radius: 50%;
             filter: blur(3rem);
           }
@@ -41,7 +41,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
             right: -25%;
             width: 75%;
             height: 100%;
-            background: rgba(246, 189, 51, 0.08);
+            background: rgba(246, 189, 51, 0.04);
             border-radius: 50%;
             filter: blur(3rem);
           }
@@ -54,6 +54,13 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
         <div className="relative z-10">
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center space-y-8">
+              <div className="flex justify-center">
+                <picture>
+                  <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
+                  <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
+                  <ImageWithFallback src="/images/logo.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
+                </picture>
+              </div>
               <div>
                 <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
                   Wil jij meer <span className="text-primary font-amatic text-5xl font-bold">VRIJHEID</span> en
@@ -65,7 +72,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
               <div>
                 <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-poppins">
                   Ontdek de kracht van <span className="font-amatic text-3xl font-bold text-primary">Spelen met de Bedoeling</span><br /><br />
-                  Probeer de gratis 3-daagse challenge
+                  Meld je aan voor de gratis 3-daagse challenge
                 </p>
               </div>
               
@@ -74,18 +81,11 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
                   onClick={onGetStarted}
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Start de gratis challenge
+                  Meld je aan voor de gratis challenge
                 </Button>
-              </div>
-              
-              <div className="flex items-center justify-center gap-2 pt-8">
-                <div className="flex gap-0.5">
-                  {[1,2,3,4,5,6,7].map((i) => (
-                    <div key={i}>
-                      <BellIcon size="md" />
-                    </div>
-                  ))}
-                </div>
+                <p className="mt-3 text-sm text-gray-200 font-poppins">
+                  Binnen enkele weken gebeurt het: dan start jouw gratis challenge
+                </p>
               </div>
             </div>
           </div>

@@ -52,7 +52,7 @@ export function SuccessPage({ formData, onStartOver }: SuccessPageProps) {
         className="space-y-4 mb-8 font-poppins"
       >
         <p className="text-muted-foreground">
-          Je challenge begint morgen via WhatsApp
+          Binnen enkele weken gebeurt het: dan start jouw gratis challenge
         </p>
         <div className="bg-muted/30 p-4 rounded-lg space-y-2">
           <p className="text-sm text-muted-foreground">WhatsApp: {formData.phone}</p>

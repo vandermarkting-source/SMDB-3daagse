@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export default function ThankYouPage() {
   const [confettiActive, setConfettiActive] = useState(false);
@@ -182,11 +183,15 @@ export default function ThankYouPage() {
           <div className="container max-w-6xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
-                <img 
-                  src="https://storage.googleapis.com/msgsndr/vbnNdAs4NZKZXfoz2etA/media/68c6aa6f0e58bee55f8a13cd.png" 
+              <picture>
+                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
+                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
+                <ImageWithFallback 
+                  src="/images/logo.png" 
                   alt="Spelen met de Bedoeling" 
                   className="h-6 w-auto xs:h-8 sm:h-10" 
                 />
+              </picture>
                 <span className="text-sm xs:text-lg sm:text-xl text-foreground hidden xs:block">Spelen met de Bedoeling</span>
               </div>
               
