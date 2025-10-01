@@ -64,7 +64,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-border/30">
+      <header className="sticky top-0 z-50 bg-transparent">
         <div className="container max-w-6xl mx-auto px-6 py-3 sm:py-4 bg-[rgba(255,255,255,0)]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
