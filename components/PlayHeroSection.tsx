@@ -55,11 +55,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center space-y-8">
               <div className="flex justify-center">
-                <picture>
-                  <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
-                  <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
-                  <ImageWithFallback src="/images/logo.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
-                </picture>
+                <ImageWithFallback src="/images/image.png" alt="Spelen met de Bedoeling" className="h-12 sm:h-14 w-auto mx-auto" />
               </div>
               <div>
                 <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">

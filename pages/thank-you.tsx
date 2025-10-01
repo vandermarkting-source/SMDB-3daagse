@@ -183,15 +183,11 @@ export default function ThankYouPage() {
           <div className="container max-w-6xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
-              <picture>
-                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
-                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
-                <ImageWithFallback 
-                  src="/images/logo.png" 
-                  alt="Spelen met de Bedoeling" 
-                  className="h-6 w-auto xs:h-8 sm:h-10" 
-                />
-              </picture>
+              <ImageWithFallback 
+                src="/images/image.png" 
+                alt="Spelen met de Bedoeling" 
+                className="h-6 w-auto xs:h-8 sm:h-10" 
+              />
                 <span className="text-sm xs:text-lg sm:text-xl text-foreground hidden xs:block">Spelen met de Bedoeling</span>
               </div>
               

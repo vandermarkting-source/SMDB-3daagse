@@ -68,15 +68,11 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto px-6 py-3 sm:py-4 bg-[rgba(255,255,255,0)]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
-              <picture>
-                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
-                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
-                <ImageWithFallback
-                  src="/images/logo.png"
-                  alt="Spelen met de Bedoeling"
-                  className="h-8 w-auto sm:h-10"
-                />
-              </picture>
+              <ImageWithFallback
+                src="/images/image.png"
+                alt="Spelen met de Bedoeling"
+                className="h-8 w-auto sm:h-10"
+              />
               <span className="text-sm sm:text-lg text-foreground hidden md:block">Spelen met de Bedoeling</span>
             </div>
             
@@ -184,15 +180,11 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto px-6 py-12">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2 sm:gap-3">
-              <picture>
-                <source media="(min-width: 640px)" srcSet="/images/logo-wide.png" />
-                <source media="(max-width: 639px)" srcSet="/images/logo-stacked.png" />
-                <ImageWithFallback
-                  src="/images/logo.png"
-                  alt="Spelen met de Bedoeling"
-                  className="h-6 w-auto sm:h-8"
-                />
-              </picture>
+              <ImageWithFallback
+                src="/images/image.png"
+                alt="Spelen met de Bedoeling"
+                className="h-6 w-auto sm:h-8"
+              />
               <span className="text-sm sm:text-base text-foreground">Spelen met de Bedoeling</span>
             </div>
             <p className="text-sm text-muted-foreground">
