@@ -59,9 +59,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
               </div>
               <div>
                 <h1 className="mb-6 leading-tight font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
-                  Wil jij meer <span className="text-primary font-semibold">Vrijheid</span> en
-                  <span className="text-accent font-semibold">Lichtheid</span>
-                  in je leven, werk of team?
+                  Wil jij meer vrijheid en lichtheid in je leven, werk of team?
                 </h1>
               </div>
               
@@ -77,7 +75,7 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
                   onClick={onGetStarted}
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-amatic"
                 >
-                  Meld je aan voor de gratis challenge
+                  Meld je aan voor de gratis challenge!
                 </Button>
                 
               </div>
