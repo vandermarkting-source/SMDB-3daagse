@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState, useRef } from "react";
 
 interface BenefitsSectionProps {
@@ -88,8 +89,15 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
           viewport={{ once: true }}
           className="text-center mb-16 max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl mb-8 font-poppins text-foreground">
-            <span className="font-amatic text-4xl font-bold text-primary">Spelen met de bedoeling</span> – wat is dat eigenlijk?
+          <h2 className="text-3xl mb-8 font-poppins text-foreground flex items-center justify-center gap-3">
+            <Image 
+              src="/images/Logo%20alleen%20tekst.png" 
+              alt="Spelen met de Bedoeling"
+              width={260}
+              height={70}
+              className="h-10 sm:h-12 w-auto"
+            />
+            <span>– wat is dat eigenlijk?</span>
           </h2>
           
           <div className="space-y-4 text-lg text-foreground font-poppins leading-relaxed">

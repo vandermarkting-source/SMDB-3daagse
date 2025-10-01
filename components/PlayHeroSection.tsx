@@ -85,17 +85,13 @@ export function PlayHeroSection({ onGetStarted }: PlayHeroSectionProps) {
                   Meld je aan voor de gratis challenge!
                 </Button>
                 {/* Rinkelende belletjes onder de CTA */}
-                <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
-                  <BellIcon size="md" />
+                <div className="mt-1 flex flex-wrap items-center justify-center gap-1">
+                  <BellIcon size="sm" />
+                  <BellIcon size="sm" />
+                  <BellIcon size="sm" />
+                  <BellIcon size="sm" />
+                  <BellIcon size="sm" />
+                  <BellIcon size="sm" />
                 </div>
               </div>
             </div>
