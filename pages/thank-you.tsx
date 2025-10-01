@@ -184,7 +184,7 @@ export default function ThankYouPage() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
               <ImageWithFallback 
-                src="/images/image.png" 
+                src="/images/logo%20naast%20elkaar.png" 
                 alt="Spelen met de Bedoeling" 
                 className="h-6 w-auto xs:h-8 sm:h-10" 
               />

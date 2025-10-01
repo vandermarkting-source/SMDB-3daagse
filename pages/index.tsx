@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
               <ImageWithFallback
-                src="/images/image.png"
+                src="/images/logo%20naast%20elkaar.png"
                 alt="Spelen met de Bedoeling"
                 className="h-8 w-auto sm:h-10"
               />
@@ -181,7 +181,7 @@ export default function HomePage() {
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2 sm:gap-3">
               <ImageWithFallback
-                src="/images/image.png"
+                src="/images/logo%20naast%20elkaar.png"
                 alt="Spelen met de Bedoeling"
                 className="h-6 w-auto sm:h-8"
               />
