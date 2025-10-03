@@ -218,9 +218,9 @@ export default function BedanktPage() {
                   Super dat je je hebt aangemeld voor de 3-daagse challenge!
                 </p>
 
-                {/* Challenge Info in zachte merk-kleuren */}
-                <div className="bg-[linear-gradient(to_right, rgba(231,122,51,0.4), rgba(246,189,51,0.4))] text-foreground p-8 rounded-2xl mb-8 pulse-effect shadow-lg">
-                  <h3 className="font-amatic text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+                {/* Challenge Info in cyan kleurenschema (matcht 'ontdekken' sectie) */}
+                <div className="bg-[rgba(0,148,199,0.08)] text-foreground p-8 rounded-2xl mb-8 shadow-lg border border-[#0094C7]/20">
+                  <h3 className="font-amatic text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3 text-[#0094C7]">
                     De challenge start snel!
                   </h3>
                   <p className="text-lg md:text-xl opacity-95">
