@@ -123,11 +123,7 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="text-center mb-12">
-            <h3 className="text-2xl text-foreground mb-4 font-poppins">
-              Ik zou er <span className="font-amatic text-3xl font-bold text-primary">NIET</span> aan beginnen...
-            </h3>
-          </div>
+
 
           <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-8">
             {rippleEffects.map((card, index) => (
@@ -164,6 +160,11 @@ export function BenefitsSection({ onGetStarted }: BenefitsSectionProps) {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <h3 className="text-2xl text-foreground font-poppins">
+              Ik zou er <span className="font-amatic text-3xl font-bold text-primary">NIET</span> aan beginnen...
+            </h3>
           </div>
         </motion.div>
       </div>

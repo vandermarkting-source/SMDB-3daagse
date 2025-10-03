@@ -113,7 +113,7 @@ export function FAQSection({ onGetStarted }: FAQSectionProps) {
           className="text-center"
         >
           <h3 className="mb-4 text-primary font-amatic text-3xl font-bold">
-            Klaar om te beginnen? 🎈
+            Klaar om te beginnen?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto font-poppins">
             Sluit je aan bij honderden anderen die al ontdekt hebben hoe speelsheid 

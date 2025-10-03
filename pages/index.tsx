@@ -177,7 +177,7 @@ export default function HomePage() {
               <span className="text-sm sm:text-base text-foreground">Spelen met de Bedoeling</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              &copy; 2024 Spelen met de Bedoeling. Alle rechten voorbehouden.
+              &copy; 2025 Spelen met de Bedoeling. Alle rechten voorbehouden.
             </p>
           </div>
         </div>
