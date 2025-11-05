@@ -23,7 +23,7 @@ export default function Ag1Page() {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 12rem 0 5rem 0;
+            padding: 7rem 0 5rem 0;
             position: relative;
             overflow: hidden;
           }
@@ -48,7 +48,7 @@ export default function Ag1Page() {
               </div>
               <div>
                 <h1 className="mb-4 leading-snug font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
-                  Wil jij meer vrijheid en lichtheid in je leven, werk of team?
+                  Welkom bij Dag 1
                 </h1>
               </div>
               <div className="pt-2">
