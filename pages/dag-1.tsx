@@ -101,7 +101,7 @@ export default function Ag1Page() {
               <AspectRatio ratio={1}>
                 <video
                   ref={videoRef}
-                  src="/Dag 1 Challenge SmdB.mp4"
+                  src="https://h0s5pwxesmgffwik.public.blob.vercel-storage.com/Dag%201%20Challenge%20SmdB.mp4"
                   controls
                   playsInline
                   preload="metadata"
@@ -116,7 +116,7 @@ export default function Ag1Page() {
                     aria-label="Speel video"
                   >
                     <span className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg px-8 py-8 text-xl font-bold">
-                      ▶︎ Play
+                      ▶︎ Speel
                     </span>
                   </button>
                 )}
