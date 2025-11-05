@@ -1,8 +1,12 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { BellIcon } from "../components/BellIcon";
 import Head from "next/head";
+import { AspectRatio } from "../components/ui/aspect-ratio";
+import { useRef, useState } from "react";
 
 export default function Ag1Page() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [showOverlay, setShowOverlay] = useState(true);
   const shareOnWhatsApp = () => {
     const message = "Kijk waar ik aan begonnen ben! 🎯 De 3-daagse spelen met de bedoeling challenge - misschien ook iets voor jou? 🚀";
     const url = "https://spelenmetdebedoeling.nl";
@@ -89,9 +93,31 @@ export default function Ag1Page() {
       <main>
         <section className="py-12">
           <div className="container max-w-4xl mx-auto px-6">
-            {/* Video onder de hero */}
-            <div className="aspect-video rounded-2xl bg-muted/20 border border-border/30 flex items-center justify-center text-muted-foreground">
-              Video voor dag 1 komt hier
+            {/* Video onder de hero - vierkant met play-overlay en geluid */}
+            <div className="relative">
+              <AspectRatio ratio={1}>
+                <video
+                  ref={videoRef}
+                  src="/Dag 1 Challenge SmdB.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full rounded-2xl border border-border/30 bg-black"
+                  onPlay={() => setShowOverlay(false)}
+                />
+                {showOverlay && (
+                  <button
+                    type="button"
+                    onClick={() => videoRef.current?.play()}
+                    className="absolute inset-0 flex items-center justify-center"
+                    aria-label="Speel video"
+                  >
+                    <span className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg px-8 py-8 text-xl font-bold">
+                      ▶︎ Play
+                    </span>
+                  </button>
+                )}
+              </AspectRatio>
             </div>
 
             {/* Share knop onder de video */}
