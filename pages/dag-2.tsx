@@ -101,7 +101,7 @@ export default function Ag2Page() {
               <AspectRatio ratio={1}>
                 <video
                   ref={videoRef}
-                  src="/Dag 2 Challenge SmdB.mp4"
+                  src="/Dag 1 Challenge SmdB.mp4"
                   controls
                   playsInline
                   preload="metadata"
