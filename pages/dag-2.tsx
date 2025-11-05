@@ -32,6 +32,9 @@ export default function Ag2Page() {
             position: relative;
             overflow: hidden;
           }
+          @media (min-width: 1024px) {
+            .hero-section { padding: 6rem 0 2rem 0; }
+          }
           .hero-gradient-1 { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(231, 122, 51, 0.12) 0%, transparent 50%, rgba(246, 189, 51, 0.06) 100%);} 
           .hero-gradient-2 { position: absolute; top: -50%; left: -25%; width: 75%; height: 100%; background: rgba(231, 122, 51, 0.03); border-radius: 50%; filter: blur(3rem);} 
           .hero-gradient-3 { position: absolute; bottom: -50%; right: -25%; width: 75%; height: 100%; background: rgba(246, 189, 51, 0.04); border-radius: 50%; filter: blur(3rem);} 
@@ -94,7 +97,7 @@ export default function Ag2Page() {
         <section className="py-12">
           <div className="container max-w-4xl mx-auto px-6">
             {/* Video onder de hero - vierkant met play-overlay en geluid */}
-            <div className="relative">
+            <div className="relative mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-md">
               <AspectRatio ratio={1}>
                 <video
                   ref={videoRef}
