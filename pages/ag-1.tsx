@@ -15,6 +15,7 @@ export default function Ag1Page() {
       <Head>
         <title>Dag 1 – Challenge</title>
         <meta name="robots" content="noindex, nofollow" />
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
       </Head>
 
       {/* Hero (zoals op index, zonder CTA, met hoedje/titel/belletjes) */}
@@ -23,13 +24,14 @@ export default function Ag1Page() {
           .hero-section {
             background: #12305B;
             width: 100%;
-            padding: 7rem 0 5rem 0;
+            padding: 7rem 0 3.5rem 0;
             position: relative;
             overflow: hidden;
           }
           .hero-gradient-1 { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(231, 122, 51, 0.12) 0%, transparent 50%, rgba(246, 189, 51, 0.06) 100%);} 
           .hero-gradient-2 { position: absolute; top: -50%; left: -25%; width: 75%; height: 100%; background: rgba(231, 122, 51, 0.03); border-radius: 50%; filter: blur(3rem);} 
           .hero-gradient-3 { position: absolute; bottom: -50%; right: -25%; width: 75%; height: 100%; background: rgba(246, 189, 51, 0.04); border-radius: 50%; filter: blur(3rem);} 
+          .amatic { font-family: "Amatic SC", cursive; font-weight: 700; }
         `
       }} />
       <section className="w-full relative z-10 hero-section">
@@ -47,12 +49,12 @@ export default function Ag1Page() {
                 />
               </div>
               <div>
-                <h1 className="mb-4 leading-snug font-poppins text-white text-2xl sm:text-3xl lg:text-4xl">
+                <h1 className="amatic mb-2 leading-snug text-white text-3xl sm:text-4xl lg:text-5xl">
                   Welkom bij Dag 1
                 </h1>
               </div>
-              <div className="pt-2">
-                <div className="mt-6 flex flex-wrap items-center justify-center gap-1">
+              <div className="pt-1">
+                <div className="mt-3 flex flex-wrap items-center justify-center gap-1">
                   <BellIcon size="sm" />
                   <BellIcon size="sm" />
                   <BellIcon size="sm" />
