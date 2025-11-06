@@ -7,6 +7,7 @@ import { useRef, useState } from "react";
 export default function Ag2Page() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [showOverlay, setShowOverlay] = useState(true);
+  const YT_DAG2 = process.env.NEXT_PUBLIC_YT_DAG2_ID;
   const shareOnWhatsApp = () => {
     const message = "Kijk waar ik aan begonnen ben! 🎯 De 3-daagse spelen met de bedoeling challenge - misschien ook iets voor jou? 🚀";
     const url = "https://spelenmetdebedoeling.nl";
@@ -99,19 +100,37 @@ export default function Ag2Page() {
             {/* Video onder de hero - vierkant met play-overlay en geluid */}
             <div className="relative mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-md">
               <AspectRatio ratio={1}>
-                <video
-                  ref={videoRef}
-                  src="https://h0s5pwxesmgffwik.public.blob.vercel-storage.com/Dag%202%20Challenge%20SmdB.mp4"
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full rounded-2xl border border-border/30 bg-black"
-                  onPlay={() => setShowOverlay(false)}
-                />
+                {YT_DAG2 ? (
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${YT_DAG2}?rel=0&modestbranding=1&playsinline=1`}
+                    title="Dag 2 video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="h-full w-full rounded-2xl border border-border/30 bg-black"
+                  />
+                ) : (
+                  <video
+                    ref={videoRef}
+                    controls
+                    playsInline
+                    preload="none"
+                    crossOrigin="anonymous"
+                    className="h-full w-full rounded-2xl border border-border/30 bg-black"
+                    onPlay={() => setShowOverlay(false)}
+                  >
+                    <source src="https://h0s5pwxesmgffwik.public.blob.vercel-storage.com/Dag%202%20Challenge%20SmdB.mp4" type="video/mp4" />
+                  </video>
+                )}
                 {showOverlay && (
                   <button
                     type="button"
-                    onClick={() => videoRef.current?.play()}
+                    onClick={() => {
+                      if (YT_DAG2) {
+                        setShowOverlay(false);
+                      } else {
+                        videoRef.current?.play();
+                      }
+                    }}
                     className="absolute inset-0 flex items-center justify-center"
                     aria-label="Speel video"
                   >
