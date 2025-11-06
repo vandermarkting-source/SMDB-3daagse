@@ -1,8 +1,10 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { BellIcon } from "../components/BellIcon";
 import Head from "next/head";
+import { AspectRatio } from "../components/ui/aspect-ratio";
 
 export default function Ag3Page() {
+  const YT_DAG3 = process.env.NEXT_PUBLIC_YT_DAG3_ID || "stkHFy2gV2I";
   const shareOnWhatsApp = () => {
     const message = "Kijk waar ik aan begonnen ben! 🎯 De 3-daagse spelen met de bedoeling challenge - misschien ook iets voor jou? 🚀";
     const url = "https://spelenmetdebedoeling.nl";
@@ -89,9 +91,17 @@ export default function Ag3Page() {
       <main>
         <section className="py-12">
           <div className="container max-w-4xl mx-auto px-6">
-            {/* Video onder de hero */}
-            <div className="aspect-video rounded-2xl bg-muted/20 border border-border/30 flex items-center justify-center text-muted-foreground">
-              Video voor dag 3 komt hier
+            {/* Video onder de hero - YouTube embed zonder overlay */}
+            <div className="relative mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-lg xl:max-w-md">
+              <AspectRatio ratio={1}>
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${YT_DAG3}?rel=0&modestbranding=1&playsinline=1`}
+                  title="Dag 3 video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="h-full w-full rounded-2xl border border-border/30 bg-black"
+                />
+              </AspectRatio>
             </div>
 
             {/* Share knop onder de video */}
