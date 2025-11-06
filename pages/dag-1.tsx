@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 export default function Ag1Page() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [showOverlay, setShowOverlay] = useState(true);
-  const YT_DAG1 = process.env.NEXT_PUBLIC_YT_DAG1_ID;
+  const YT_DAG1 = process.env.NEXT_PUBLIC_YT_DAG1_ID || "pW6XhRRSyCA";
   const shareOnWhatsApp = () => {
     const message = "Kijk waar ik aan begonnen ben! 🎯 De 3-daagse spelen met de bedoeling challenge - misschien ook iets voor jou? 🚀";
     const url = "https://spelenmetdebedoeling.nl";
