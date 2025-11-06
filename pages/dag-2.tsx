@@ -2,12 +2,9 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { BellIcon } from "../components/BellIcon";
 import Head from "next/head";
 import { AspectRatio } from "../components/ui/aspect-ratio";
-import { useRef, useState } from "react";
 
 export default function Ag2Page() {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [showOverlay, setShowOverlay] = useState(true);
-  const YT_DAG2 = process.env.NEXT_PUBLIC_YT_DAG2_ID;
+  const YT_DAG2 = process.env.NEXT_PUBLIC_YT_DAG2_ID || "-76_Xldg6ls";
   const shareOnWhatsApp = () => {
     const message = "Kijk waar ik aan begonnen ben! 🎯 De 3-daagse spelen met de bedoeling challenge - misschien ook iets voor jou? 🚀";
     const url = "https://spelenmetdebedoeling.nl";
@@ -110,34 +107,14 @@ export default function Ag2Page() {
                   />
                 ) : (
                   <video
-                    ref={videoRef}
                     controls
                     playsInline
                     preload="none"
                     crossOrigin="anonymous"
                     className="h-full w-full rounded-2xl border border-border/30 bg-black"
-                    onPlay={() => setShowOverlay(false)}
                   >
                     <source src="https://h0s5pwxesmgffwik.public.blob.vercel-storage.com/Dag%202%20Challenge%20SmdB.mp4" type="video/mp4" />
                   </video>
-                )}
-                {showOverlay && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (YT_DAG2) {
-                        setShowOverlay(false);
-                      } else {
-                        videoRef.current?.play();
-                      }
-                    }}
-                    className="absolute inset-0 flex items-center justify-center"
-                    aria-label="Speel video"
-                  >
-                    <span className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg px-8 py-8 text-xl font-bold">
-                      ▶︎ Speel
-                    </span>
-                  </button>
                 )}
               </AspectRatio>
             </div>
